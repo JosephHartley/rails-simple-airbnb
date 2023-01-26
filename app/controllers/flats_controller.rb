@@ -4,6 +4,11 @@ class FlatsController < ApplicationController
   # GET /flats or /flats.json
   def index
     @flats = Flat.all
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"]
+      @flats = Flat.where("name LIKE '%#{@name}%'")
+    end
   end
 
   # GET /flats/1 or /flats/1.json
