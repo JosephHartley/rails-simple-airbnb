@@ -13,6 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+a, p {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800 !important;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
  .flex {
   display: flex;
 }
